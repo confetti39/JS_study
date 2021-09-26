@@ -8,7 +8,9 @@ function onLoginSubmit(event){
     event.preventDefault();
     loginForm.classList.add(HIDDEN_CLASSNAME);
     const username = loginInput.value;
-    greeting.innerText = "Hello " + username;
+    // 변수와 문자열을 합치는 방법
+    greeting.innerText = `Hello ${username}`;
+    //
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
