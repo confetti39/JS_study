@@ -11,6 +11,10 @@ function onLoginSubmit(event){
     const username = loginInput.value;
     //localStorage에 username 저장
     localStorage.setItem(USERNAME_KEY, username);
+    paintGreetings(username);
+}
+
+function paintGreetings(username){
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
@@ -23,6 +27,5 @@ if(savedUsername === null){
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     loginForm.addEventListener("submit", onLoginSubmit);
 } else{
-    greeting.innerText = `Hello ${savedUsername}`;
-    greeting.classList.remove(HIDDEN_CLASSNAME);
+    paintGreetings(savedUsername);
 }
