@@ -1,7 +1,51 @@
-body{
-    background-color: beige;
+body {
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-repeat: no-repeat;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
 
+#date {
+    font-size: smaller;
+}
+
+#clock {
+    font-size: xx-large;
+}
+
+#login-form {}
+
+#greeting {}
+
+#todo-form {}
+
+input {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+#todo-list {
+    margin-right: auto;
+    margin-left: auto;
+    list-style: none;
+}
+
+#todo-list button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    padding: 5px;
+}
+
+#quote {}
+
+#weather {}
