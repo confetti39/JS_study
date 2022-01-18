@@ -32,11 +32,12 @@
 
     <h2>Property & Method</h2>
     <script>
-        coworkers.showAll = function(){
-            for (let key in this) {
+        names.showAll = function(){
+            for (let key in this){
                 document.write(key + ': ' + this[key] + "<br>");
             }
         }
+        names.showAll();
     </script>
 </body>
 
