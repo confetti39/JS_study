@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+        var names = {
+            "lastName": "jeong",
+            "firstName": "hyerin"
+        };
+        document.write("name: " + names.lastName + names.firstName + "<br>");
+        names.bookkeeper = "duru";
+        document.write("bookkeeper: " + names.bookkeeper + "<br>");
+        names["data scientist"] = "taeho";
+        document.write("data scientist: " + names["data scientist"]);
+    </script>
+    <!-- 객체 추가할 때 배열 형식처럼 추가할 수 있음. -->
+    <h2>Iterate</h2>
+    <script>
+        for (let key in names) {
+            document.write(key + ': ' + names[key] + "<br>");
+        }
+    </script>
+
+    <h2>Property & Method</h2>
+    <script>
+        coworkers.showAll = function(){
+            for (let key in this) {
+                document.write(key + ': ' + this[key] + "<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>
